@@ -1,0 +1,8 @@
+Co-operation : Inter Thread Communication
+
+Inter Thread Communication is a mechanism by which a thread releases the lock and enter into pushed state and another thread acquires the lock and continue to execute.
+
+It is implemented by the Object class's methods:
+1. wait()
+2. notify()
+3. notifyAll()

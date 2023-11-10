@@ -1,0 +1,37 @@
+You can define a method as static, a variable as static by putting "static" keyword before them.
+
+You can also define static blocks. Static blocks loads when class is loaded.
+Syntax:
+
+static {
+    //Tasks
+}
+
+Example:
+class StaticDemo{
+    static void one(){
+        System.out.println("Static 1");
+    }
+    public static void main(String... args){
+        System.out.println("Main");
+
+    }
+
+    static void two() {
+        System.out.println("Static 2");
+    }
+}
+
+Here is a step-by-step explanation of what happens when your code is executed:
+
+The JVM loads the Test class.
+The first static block in the Test class is executed, printing "Static 1" to the console.
+The second static block in the Test class is executed, printing "Static 2" to the console.
+The main() method in the Test class is executed, printing "Main" to the console.
+
+
+Here are some additional things to keep in mind about static blocks:
+
+Static blocks are executed only once, when the class is loaded.
+Static blocks can be used to initialize static variables, registers, and other resources.
+Static blocks can be used to perform other tasks, such as logging or loading configuration data.

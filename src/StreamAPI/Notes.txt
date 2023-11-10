@@ -1,0 +1,12 @@
+Java Streams
+-------------
+
+Collection: to represent group of data/objects as single entity.
+Stream: to process the data from collection we use streams concept.
+
+
+Java Streams - Filter
+---------------------
+
+Filter: Based on the conditions, "Filter", filters the data/objects present into collection and store them into new collection. In filter process, Data is reduced.
+

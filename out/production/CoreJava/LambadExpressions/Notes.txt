@@ -1,0 +1,74 @@
+Objective:
+
+1. To bring Functional programming features in JAVA.
+    * Functional Programming feature enable us to store data in the form functions and variables.
+
+2. Code Optimization/ concise the code.
+    * Write small code to achieve big goals.
+
+
+
+What is lambda expression?
+
+It is an anonymous function in java. Anonymous functions have no name(nameless function),
+it also doesn't have returnType and no AccessModifiers.
+
+Only Functional Interfaces can be written into Lambda expression. Functional Interfaces are those interfaces which have only one abstract method. Ex: Runnable Interface.
+
+Without Functional Interface we cannot write Lambda Expression.
+
+
+Syntax:
+
+    (parameters) -> {
+        expressions;
+    }
+
+    ex:
+        () -> S.o.p(Hello, world);
+
+        (a,b) -> S.o.p(a+b);
+
+        a -> a*a (this is equals to : (a)->{return a*a} )
+
+
+Some Pre-Defined Functional Interfaces which we used to write Lambda Expression.
+
+Pre-Defined Functional Interfaces(jav.util.Function)
+1) Predicate
+2) Function
+3) Consumer
+4) Supplier
+
+
+1) Predicate Contains an abstract method "test" which takes only one argument and return true/false
+
+    Interface Predicate(T){    //T= Object type
+
+        public abstract void boolean test(T t);
+
+    }
+
+2) Function contains an abstract method "apply" takes any type of parameter and returns any type of data
+
+    Interface Function(T,R){   //T= Object type, R= Return type
+
+        public R apply(T t);
+
+    }
+
+3) Consumer contains an abstract method "get" which takes any type of parameter and doesn't return any value
+
+    Interface Consumer(T){   //T= Object type
+
+        public void accept(T t);
+
+    }
+
+4) Supplier contains an abstract method "accept" which doesn't take input but return a value
+
+    Interface Supplier(R){   //R= Return type
+
+        public void get();
+
+    }
